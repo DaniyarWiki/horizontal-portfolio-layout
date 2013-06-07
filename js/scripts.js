@@ -63,6 +63,15 @@
     });
   });
   
+  //add mouse wheel support with the jquery.mousewheel plugin
+  list.mousewheel(function(event, delta) {
+
+      this.scrollLeft -= (delta * 60);
+    
+      event.preventDefault();
+
+   });
+  
 })(jQuery);
 
  
